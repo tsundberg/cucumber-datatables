@@ -39,7 +39,7 @@ public class DayValue {
 }
 ```
 
-A step that can use this data table may look like this:
+A step that can use this data table and custom type may look like this:
 ```
 @Given("^the following day values$")
 public void the_following_day_values(List<DayValue> dayValues) {
