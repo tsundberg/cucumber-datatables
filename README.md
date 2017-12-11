@@ -39,6 +39,17 @@ public class DayValue {
 }
 ```
 
+A step that can use this data table may look like this:
+```
+@Given("^the following day values$")
+public void the_following_day_values(List<DayValue> dayValues) {
+    for (DayValue dayValue : dayValues) {
+        System.out.println(dayValue);
+    }
+}
+```
+
+
 More like this can be found at my blog at [Think Code AB](http://www.thinkcode.se/blog/category/Cucumber).
 
 If you want to learn more about Behaviour-Driven Development (BDD) or Cucumber, please contact me at [thomas@thinkcode.se](mailto:thomas@thinkcode.se)
